@@ -1,0 +1,18 @@
+//functons
+
+@function set-font-color($color) {
+  @if (lightness($color) > 50) {
+    @return #2e2e2e;
+  }
+  @else {
+    @return #ffffff;
+  }
+}
+
+//base colors
+
+$background-color: #fff;
+$font-color: set-font-color($background-color);
+
+$accent-color: #b33024;
+$accent-color-light: lighten( $accent-color, 6% );

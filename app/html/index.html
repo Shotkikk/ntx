@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!--<link href="fonts/barlow/Barlow-Medium.ttf" rel="stylesheet">-->
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+        <script class="cropitReload" src="../js/jquery.min.js"></script>
+        <script class="cropitReload" src="../js/popper.min.js"></script>
+        <script class="cropitReload" src="../js/bootstrap.min.js"></script>
+
+        <link href="../css/styles.min.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-ntx navbar-expand-lg">
+            <div class="container-fluid navbar-container">
+                <div class="header-content">
+                    <div class="left-menu">
+                        <ul class="list-unstyled navbar-nav-ntx nav-left">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" title="Dashboard" tooltip="true" data-placement="bottom">
+                                    <img src="../images/danwoodwhite.png" style="height: 20px">
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" href="#" aria-expanded="false">
+                                    Narzędzia
+                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                                </a>
+                                <div class="dropdown-menu fadeInDownSlow">
+                                    <ul>
+                                        <li class="nav-link">
+                                            <a>
+                                                Dokumentacje techniczne
+                                            </a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a>
+                                                Dostawcy
+                                            </a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a>
+                                                Dostępy próbne
+                                            </a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a>
+                                                FAQ
+                                            </a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a>
+                                                Grupy pakietów
+                                            </a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a>
+                                                Kategorie materiału
+                                            </a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a>
+                                                Kategorie produktu
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown ntx-d-sm-none">
+                                <a data-toggle="dropdown" href="#" aria-expanded="false">
+                                    Użytkownik
+                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                                </a>
+                                <div class="dropdown-menu ">
+                                    <ul>
+                                        <li class="nav-link">
+                                            <a>
+                                                1
+                                            </a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a>
+                                                2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown ntx-d-sm-none">
+                                <a data-toggle="dropdown" href="#" aria-expanded="false">
+                                    Sprzedawca
+                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                                </a>
+                                <div class="dropdown-menu ">
+                                    <ul>
+                                        <li class="nav-link">
+                                            <a>
+                                                1
+                                            </a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a>
+                                                2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown ntx-d-sm-none">
+                                <a data-toggle="dropdown" href="#" aria-expanded="false">
+                                    Dokumenty
+                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                                </a>
+                                <div class="dropdown-menu ">
+                                    <ul>
+                                        <li class="nav-link">
+                                            <a>
+                                                1
+                                            </a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a>
+                                                2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown ntx-d-sm-none">
+                                <a data-toggle="dropdown" href="#" aria-expanded="false">
+                                    Administracja
+                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                                </a>
+                                <div class="dropdown-menu ">
+                                    <ul>
+                                        <li class="nav-link">
+                                            <a>
+                                                1
+                                            </a>
+                                        </li>
+                                        <li class="nav-link">
+                                            <a>
+                                                2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown dropdown-group ntx-d-sm-block d-lg-none">
+                                <a data-toggle="dropdown" href="#" aria-expanded="false">
+                                    Więcej
+                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                                </a>
+                                <div class="dropdown-menu combo-dropdown">
+                                    <div class="combo-dropdown-left">
+                                        <ul>
+                                            <li class="nav-link combo-dropdown-link" data-dropdown="uzytkownik">
+                                                <a>
+                                                    Użytkownik
+                                                </a>
+                                            </li>
+                                            <li class="nav-link combo-dropdown-link" data-dropdown="sprzedawca">
+                                                <a>
+                                                    Sprzedawca
+                                                </a>
+                                            </li>
+                                            <li class="nav-link combo-dropdown-link" data-dropdown="dokumenty">
+                                                <a>
+                                                    Dokumenty
+                                                </a>
+                                            </li>
+                                            <li class="nav-link combo-dropdown-link" data-dropdown="administracja">
+                                                <a>
+                                                    Administracja
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="combo-dropdown-right"></div>
+                                    <div class="combo-dropdown-right d-none" data-dropdown="uzytkownik">
+                                        <ul>
+                                            <li class="nav-link">
+                                                <a>
+                                                    cyckji
+                                                </a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a>
+                                                    djupa
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="combo-dropdown-right d-none" data-dropdown="sprzedawca">
+                                        <ul>
+                                            <li class="nav-link">
+                                                <a>
+                                                    chjuj
+                                                </a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a>
+                                                    cjipa
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="combo-dropdown-right d-none" data-dropdown="dokumenty">
+                                        <ul>
+                                            <li class="nav-link">
+                                                <a>
+                                                    costam
+                                                </a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a>
+                                                    hehs
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="combo-dropdown-right d-none" data-dropdown="administracja">
+                                        <ul>
+                                            <li class="nav-link">
+                                                <a>
+                                                    BLEWBELBL BLELLEBLEBL EL
+                                                </a>
+                                            </li>
+                                            <li class="nav-link">
+                                                <a>
+                                                    DUDU DUDUDUD UUDDUDU
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-menu float-right d-none d-sm-block">
+                        <ul class="list-unstyled navbar-nav-ntx nav-right">
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" href="#" title="Nowy..." aria-expanded="false" tooltip="true" data-placement="bottom">
+                                    <i class="material-icons">add_circle</i>
+                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowy dostęp próbny</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowe FAQ</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowa grupa pakietów</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowa kategoria produktu</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowy klienta</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowe miejsce</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowa oferta handlowa</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowy parametr typu domu</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowy produkt</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowy projekt</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowa promocja</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowy rynek</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowa seria</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowy sprzedawca</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowy standard</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowy typ domu</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Nowa wiadomość</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" href="#" aria-expanded="false" title="Słowniki" tooltip="true" data-placement="bottom">
+                                    <i class="material-icons">translate</i>
+                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Grupy tagów załącznika</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Jednostki</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Języki</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Kategorie dokumentacji technicznej</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Kategorie dostawców</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>Kraje</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" href="#" aria-expanded="false" title="Raporty" tooltip="true" data-placement="bottom">
+                                    <i class="material-icons">description</i>
+                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>R1 .....</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>R2 .....</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>R3 .....</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>R4 .....</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>R5 .....</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>R6 .....</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link">
+                                                <div>
+                                                    <span>R7 .....</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item d-none d-sm-none d-md-block">
+                                <a class="nav-link session-info" title="Czas sesji" tooltip="true" data-placement="bottom">
+                                    <i class="material-icons">access_time</i>
+                                    <span class="session-time">0:54:31</span>
+                                </a>
+                            </li>
+                            <li class="dropdown user">
+                                <a data-toggle="dropdown" href="#" aria-expanded="false" title="Użytkownik" tooltip="true" data-placement="bottom">
+                                    <i class="material-icons">face</i>
+                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul>
+                                        <li class="user-link d-sm-block d-md-none">
+                                            <a>
+                                                <div>
+                                                    <i class="material-icons small-icon">access_time</i>
+                                                    <span>0:54:31</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="divider d-sm-block d-md-none"></li>
+                                        <li class="current-user">
+                                            <div class="user-name bold">
+                                                Kacper Maciejewski
+                                            </div>
+                                            <div class="user-mail">
+                                                kacper.maciejewski@netteam.pl
+                                            </div>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="user-link">
+                                            <a>
+                                                <div>
+                                                    <i class="material-icons small-icon">person</i>
+                                                    <span>Profil</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="user-link">
+                                            <a>
+                                                <div>
+                                                    <i class="material-icons small-icon">autorenew</i>
+                                                    <span>Przełącz</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="user-link">
+                                            <a>
+                                                <div>
+                                                    <i class="material-icons small-icon">power_settings_new</i>
+                                                    <span>Wyloguj</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="expander-menu float-right d-block d-sm-none">
+                        <ul class="list-unstyled navbar-nav-ntx nav-right">
+                            <li class="nav-item">
+                                <a class="nav-link more-right" title="Więcej" tooltip="true" data-placement="bottom">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sidebar">
+            <div class="sidebar-inner">
+                <div class="sidebar-header">
+                    <span class="sidebar-header-content">
+                        <div class="sidebar-header-category-icon-container">
+                            <i class="material-icons">lightbulb_outline</i>
+                        </div>
+                        <div class="sidebar-header-category-text-container bold">
+                            Projekty
+                        </div>
+                    </span>
+                </div>
+                <div class="sidebar-items sidebar-items-expanded">
+                    <ul class="sidebar-list">
+                        <li class="sidebar-list-item sidebar-list-item-tree">
+                            <a class="sidebar-list-item-link bold">
+                                <i class="material-icons">playlist_add_check</i> Wybory
+                            </a>
+                            <ul class="sidebar-list">
+                                <li class="sidebar-list-item active">
+                                    <a class="sidebar-list-item-link">Dodaj</a>
+                                </li>
+                                <li class="sidebar-list-item">
+                                    <a class="sidebar-list-item-link">Pakiet</a>
+                                </li>
+                                <li class="sidebar-list-item">
+                                    <a class="sidebar-list-item-link">Ustalenia</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a class="sidebar-list-item-link">
+                                <i class="material-icons">attach_file</i> Załączniki
+                            </a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a class="sidebar-list-item-link">
+                                <i class="material-icons">insert_drive_file</i> Dokumenty
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-items sidebar-items-collapsed d-none">
+                    <ul class="sidebar-list">
+                        <li class="sidebar-list-item sidebar-list-item-tree">
+                            <a class="sidebar-list-item-link bold">
+                                <i class="material-icons">playlist_add_check</i>
+                            </a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a class="sidebar-list-item-link">
+                                <i class="material-icons">attach_file</i>
+                            </a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a class="sidebar-list-item-link">
+                                <i class="material-icons">insert_drive_file</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-action-container ">
+                    <a class="sidebar-hide-action">
+                        <i class="material-icons">navigate_before</i>
+                    </a>
+                </div>
+                <div class="sidebar-action-container d-none sm-none md-block">
+                    <a class="sidebar-show-action">
+                        <i class="material-icons">navigate_next</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" style="margin-top: 60px;">
+            <div class="col-md-12">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+                </div>
+
+                <label for="basic-url">Your vanity URL</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">With textarea</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+            <div class="col-md-12" style="margin-top: 15px;">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+            <div class="jumbotron" style="margin-top: 15px;">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+            <div class="col-md-12" style="margin-top: 15px;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                <nav id="navbar-example2" class="navbar navbar-light bg-light" style="margin-top: 15px;">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fat">@fat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mdo">@mdo</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#one">one</a>
+                                <a class="dropdown-item" href="#two">two</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#three">three</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+                    <h4 id="fat">@fat</h4>
+                    <p>...</p>
+                    <h4 id="mdo">@mdo</h4>
+                    <p>...</p>
+                    <h4 id="one">one</h4>
+                    <p>...</p>
+                    <h4 id="two">two</h4>
+                    <p>...</p>
+                    <h4 id="three">three</h4>
+                    <p>...</p>
+                </div>
+        </div>
+    </body>
+
+    <script>
+        const switcher = $('.more-right');
+        const navLeftMenu = $('.left-menu');
+        const navRightMenu = $('.right-menu');
+        const sideMenu = $('.sidebar');
+
+        $( document ).ready(function() {
+            $('[tooltip="true"]').tooltip({
+                trigger : 'hover',
+                animation: true,
+                'delay': { show: 500 }
+            })
+        });
+        switcher.click(function () {
+            if($(this).hasClass('more-right-open')) {
+                navLeftMenu.removeClass('d-none');
+                navRightMenu.addClass('d-none');
+                $(this).html('<i class="material-icons">more_vert</i>');
+                $(this).removeClass('more-right-open');
+            }
+            else {
+                navLeftMenu.addClass('d-none');
+                navRightMenu.removeClass('d-none');
+                $(this).html('<i class="material-icons">close</i>');
+                $(this).addClass('more-right-open');
+            }
+        });
+        $( window ).resize(function() {
+            navLeftMenu.removeClass('d-none');
+            navRightMenu.addClass('d-none');
+            switcher.html('<i class="material-icons">more_vert</i>');
+            switcher.removeClass('more-right-open');
+        });
+
+        $(document).on('click', '.combo-dropdown', function (e) {
+            $(this).closest('dropdown').css('color', 'black');
+            e.stopPropagation();
+        });
+
+        $('.combo-dropdown-link').click(function () {
+            $('.combo-dropdown-right').addClass('d-none');
+            $('.combo-dropdown-right[data-dropdown="' + $(this).data('dropdown') + '"]').removeClass('d-none');
+        });
+        $('.sidebar-hide-action').click(function () {
+            if(sideMenu.hasClass('sidebar-collapsed')) {
+                $(this).html('<i class="material-icons">navigate_before</i>');
+                $('.sidebar-header-category-text-container').removeClass('d-none');
+                $('.sidebar-items-collapsed').addClass('d-none');
+                $('.sidebar-items-expanded').removeClass('d-none');
+                sideMenu.removeClass('sidebar-collapsed');
+            }
+            else {
+                $(this).html('<i class="material-icons">navigate_next</i>');
+                $('.sidebar-header-category-text-container').addClass('d-none');
+                $('.sidebar-items-collapsed').removeClass('d-none');
+                $('.sidebar-items-expanded').addClass('d-none');
+                sideMenu.addClass('sidebar-collapsed');
+            }
+        });
+    </script>
+</html>

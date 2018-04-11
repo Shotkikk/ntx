@@ -1,0 +1,16 @@
+@import "variables";
+
+.tooltip {
+  font-family: -apple-system !important;
+  font-size: 12px;
+  top: 4px !important;
+}
+.tooltip-inner {
+  padding: 0.5rem 1rem;
+  background-color: $font-color;
+}
+.arrow {
+  &:before {
+    border-bottom-color: #2e2e2e !important;
+  }
+}

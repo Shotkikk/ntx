@@ -1,0 +1,28 @@
+@import "variables";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  color: $font-color;
+  font-size: 12px;
+  overflow-y: scroll !important;
+}
+body {
+  font-family: -apple-system !important;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-color: $background-color;
+  margin: 0;
+  color: $font-color;
+}
+
+a {
+  outline: none !important;
+}
+
+.bold {
+  font-weight: 600;
+}
