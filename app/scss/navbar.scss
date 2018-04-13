@@ -19,21 +19,6 @@
   right: 0;
   border-radius: 0;
   background-color: $accent-color;
-  .combo-dropdown-right {
-    overflow: hidden;
-    .nav-link {
-      padding-right: 40px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      > a {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        max-width: 100%;
-      }
-    }
-  }
   .navbar-container {
     padding: 0 5px;
   }
@@ -123,11 +108,10 @@
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         ul {
           list-style: none;
-          padding: 6px 0;
+          padding: 0;
           li {
             white-space: nowrap;
             font-size: 14px;
-            //padding: 6px 18px;
             > a {
               cursor: default;
             }
@@ -159,11 +143,10 @@
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         ul {
           list-style: none;
-          padding: 6px 0;
+          padding: 0;
           li {
             white-space: nowrap;
             font-size: 14px;
-            //padding: 6px 18px;
             > a {
               cursor: default;
             }
@@ -194,7 +177,7 @@
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         ul {
           list-style: none;
-          padding: 6px 0;
+          padding: 0;
           li {
             font-size: 14px;
             font-weight: 400;
@@ -260,11 +243,6 @@
   }
 }
 
-.dropdown-menu-right {
-  left: auto;
-  right: 0;
-}
-
 .navbar-collapse-ntx {
   display: -webkit-flex;
   display: flex;
@@ -279,11 +257,7 @@
   font-weight: 600;
 }
 
-.dropdown-toggle{
-  &::after{
-    content: none;
-  }
-}
+
 .fa-angle-down {
   height: 11px;
   width: 11px;
@@ -298,35 +272,7 @@
   font-size: 24px !important;
   vertical-align: middle;
 }
-.dropdown-icon {
-  font-size: 14px !important;
-}
+
 .more-right {
   cursor: pointer;
-}
-
-.dropdown-menu.show {
-  display: flex;
-}
-
-.combo-dropdown {
-  padding: 0;
-  .combo-dropdown-left {
-    padding: .5rem 0;
-    float: left;
-    border-right: 1px solid rgba(0,0,0,.15);
-  }
-  .combo-dropdown-right {
-    padding: .5rem 0;
-    float: right;
-  }
-}
-
-.dropdown-menu {
-  ul {
-    width: 100%;
-  }
-}
-.combo-dropdown-right {
-  width: 100%;
 }

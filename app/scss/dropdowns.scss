@@ -1,0 +1,113 @@
+@import "variables";
+
+.dropdown-menu {
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  ul {
+    width: 100%;
+  }
+  .show {
+    display: flex;
+  }
+}
+
+.dropdown-toggle{
+  &::after{
+    content: none;
+  }
+}
+
+.dropdown-icon {
+  font-size: 14px !important;
+}
+
+.dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+
+.combo-dropdown {
+  padding: 0;
+  .combo-dropdown-left {
+    padding: .5rem 0;
+    float: left;
+    border-right: 1px solid #e5e5e5;
+  }
+  .combo-dropdown-right {
+    padding: .5rem 0;
+    float: right;
+  }
+  .combo-dropdown-right {
+    width: 100%;
+  }
+  .combo-dropdown-right {
+    overflow: hidden;
+    .nav-link {
+      padding-right: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      > a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.sidebar-list-item-tree {
+  &:hover {
+    .dropdown-menu {
+      display: block;
+    }
+  }
+  .dropdown-menu {
+    margin-top: -45px;
+    margin-left: 54px;
+    border-radius: 0;
+    border-left: none !important;
+    z-index: 998;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 5px 0;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        white-space: nowrap;
+        font-size: 14px;
+        > a {
+          cursor: default;
+        }
+        &:hover {
+          text-decoration: none;
+          outline: 0;
+          background-color: #eee;
+        }
+        &:active {
+          text-decoration: none;
+          background-color: #eee;
+        }
+        &:focus {
+          text-decoration: none;
+          background-color: #eee;
+        }
+      }
+      .divider {
+        height: 1px;
+        background-color: rgba(0,0,0,0.1);
+        display: block;
+        margin: 4px 0;
+        padding: 0 1px;
+      }
+      .nav-link-header {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+

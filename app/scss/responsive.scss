@@ -66,16 +66,18 @@
 }
 
 @media (max-width: 767px) {
-  .dropdown-menu {
-    width: calc(100vw - 20px);
-    margin-left: 0;
-    left: 0 !important;
-  }
-  .dropdown {
-    position: static;
-  }
-  .current-user > div {
-    max-width: 100% !important;
+  .navbar-nav-ntx {
+    .dropdown-menu {
+      width: calc(100vw - 20px);
+      margin-left: 0;
+      left: 0 !important;
+    }
+    .dropdown {
+      position: static;
+    }
+    .current-user > div {
+      max-width: 100% !important;
+    }
   }
 }
 
@@ -94,5 +96,87 @@
 @media (min-width:767px) {
   .combo-dropdown-right {
     min-width: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-ntx {
+    width: calc(100% - 54px);
+    margin-left: 54px;
+  }
+  .sidebar-ntx {
+    width: 54px;
+    .sidebar-inner {
+      .sidebar-header {
+        .sidebar-header-content {
+          padding: 10px 6px;
+          .sidebar-header-category-text-container {
+            display: none;
+          }
+        }
+      }
+      .sidebar-items-sm {
+        display: block;
+      }
+      .sidebar-items-md {
+        display: none;
+      }
+      .sidebar-action-container {
+        .sidebar-hide-action {
+          display: none;
+        }
+        .sidebar-show-action {
+          display: block;
+        }
+      }
+    }
+  }
+  .overlay-in {
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.3);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-ntx {
+    width: calc(100% - 220px);
+    margin-left: 220px;
+  }
+  .sidebar-ntx {
+    width: 220px;
+    .sidebar-inner {
+      .sidebar-header {
+        .sidebar-header-content {
+          padding: 10px;
+          .sidebar-header-category-text-container {
+            display: block;
+          }
+        }
+      }
+      .sidebar-items-sm {
+        display: none;
+      }
+      .sidebar-items-md {
+        display: block;
+      }
+      .sidebar-action-container {
+        .sidebar-hide-action {
+          display: block;
+        }
+        .sidebar-show-action {
+          display: none;
+        }
+      }
+    }
   }
 }

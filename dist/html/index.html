@@ -559,7 +559,7 @@
             </div>
         </nav>
 
-        <div class="sidebar">
+        <div class="sidebar sidebar-ntx">
             <div class="sidebar-inner">
                 <div class="sidebar-header">
                     <span class="sidebar-header-content">
@@ -571,7 +571,7 @@
                         </div>
                     </span>
                 </div>
-                <div class="sidebar-items sidebar-items-expanded">
+                <div class="sidebar-items sidebar-items-md">
                     <ul class="sidebar-list">
                         <li class="sidebar-list-item sidebar-list-item-tree">
                             <a class="sidebar-list-item-link bold">
@@ -601,12 +601,45 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sidebar-items sidebar-items-collapsed d-none">
+                <div class="sidebar-items sidebar-items-sm">
                     <ul class="sidebar-list">
-                        <li class="sidebar-list-item sidebar-list-item-tree">
+                        <li class="sidebar-list-item sidebar-list-item-tree dropdown">
                             <a class="sidebar-list-item-link bold">
                                 <i class="material-icons">playlist_add_check</i>
                             </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="nav-link nav-link-header">
+                                            <div>
+                                                <span>Wybory</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a class="nav-link">
+                                            <div>
+                                                <span>Dodaj</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link">
+                                            <div>
+                                                <span>Pakiet</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link">
+                                            <div>
+                                                <span>Ustalenia</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="sidebar-list-item">
                             <a class="sidebar-list-item-link">
@@ -620,153 +653,156 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sidebar-action-container ">
-                    <a class="sidebar-hide-action">
+                <div class="sidebar-action-container">
+                    <a class="sidebar-action sidebar-hide-action">
                         <i class="material-icons">navigate_before</i>
                     </a>
-                </div>
-                <div class="sidebar-action-container d-none sm-none md-block">
-                    <a class="sidebar-show-action">
+                    <a class="sidebar-action sidebar-show-action">
                         <i class="material-icons">navigate_next</i>
                     </a>
                 </div>
             </div>
         </div>
 
-
-        <div class="container" style="margin-top: 60px;">
-            <div class="col-md-12">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+<div class="container-ntx">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
 
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2">@example.com</span>
-                    </div>
-                </div>
-
-                <label for="basic-url">Your vanity URL</label>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                    </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                </div>
-
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">$</span>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                    <div class="input-group-append">
-                        <span class="input-group-text">.00</span>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">With textarea</span>
-                    </div>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
                 </div>
             </div>
-            <div class="col-md-12" style="margin-top: 15px;">
-                <button type="button" class="btn btn-primary">Primary</button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
-                <button type="button" class="btn btn-success">Success</button>
-                <button type="button" class="btn btn-danger">Danger</button>
-                <button type="button" class="btn btn-warning">Warning</button>
-                <button type="button" class="btn btn-info">Info</button>
-                <button type="button" class="btn btn-light">Light</button>
-                <button type="button" class="btn btn-dark">Dark</button>
-                <button type="button" class="btn btn-link">Link</button>
-            </div>
-            <div class="jumbotron" style="margin-top: 15px;">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
-            </div>
-            <div class="col-md-12" style="margin-top: 15px;">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-                <nav id="navbar-example2" class="navbar navbar-light bg-light" style="margin-top: 15px;">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#fat">@fat</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mdo">@mdo</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#one">one</a>
-                                <a class="dropdown-item" href="#two">two</a>
-                                <div role="separator" class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#three">three</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-                <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-                    <h4 id="fat">@fat</h4>
-                    <p>...</p>
-                    <h4 id="mdo">@mdo</h4>
-                    <p>...</p>
-                    <h4 id="one">one</h4>
-                    <p>...</p>
-                    <h4 id="two">two</h4>
-                    <p>...</p>
-                    <h4 id="three">three</h4>
-                    <p>...</p>
+
+            <label for="basic-url">Your vanity URL</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
                 </div>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                    <span class="input-group-text">.00</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">With textarea</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
         </div>
+        <div class="col-md-12" style="margin-top: 15px;">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <div class="jumbotron" style="margin-top: 15px;">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+        <div class="col-md-12" style="margin-top: 15px;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <nav id="navbar-example2" class="navbar navbar-light bg-light" style="margin-top: 15px;">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#fat">@fat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mdo">@mdo</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#one">one</a>
+                        <a class="dropdown-item" href="#two">two</a>
+                        <div role="separator" class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#three">three</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <h4 id="fat">@fat</h4>
+            <p>...</p>
+            <h4 id="mdo">@mdo</h4>
+            <p>...</p>
+            <h4 id="one">one</h4>
+            <p>...</p>
+            <h4 id="two">two</h4>
+            <p>...</p>
+            <h4 id="three">three</h4>
+            <p>...</p>
+        </div>
+    </div>
+</div>
+
     </body>
 
     <script>
         const switcher = $('.more-right');
         const navLeftMenu = $('.left-menu');
         const navRightMenu = $('.right-menu');
-        const sideMenu = $('.sidebar');
+        const sideMenu = $('.sidebar-ntx');
+        const containerNtx = $('.container-ntx')
+        const overlay = $('.overlay')
 
         $( document ).ready(function() {
             $('[tooltip="true"]').tooltip({
@@ -794,6 +830,10 @@
             navRightMenu.addClass('d-none');
             switcher.html('<i class="material-icons">more_vert</i>');
             switcher.removeClass('more-right-open');
+
+            if(window.matchMedia( "(min-width: 1200px)" ).matches) {
+                sideMenu.removeClass('sidebar-ntx-expanded');
+            }
         });
 
         $(document).on('click', '.combo-dropdown', function (e) {
@@ -805,20 +845,24 @@
             $('.combo-dropdown-right').addClass('d-none');
             $('.combo-dropdown-right[data-dropdown="' + $(this).data('dropdown') + '"]').removeClass('d-none');
         });
-        $('.sidebar-hide-action').click(function () {
-            if(sideMenu.hasClass('sidebar-collapsed')) {
-                $(this).html('<i class="material-icons">navigate_before</i>');
-                $('.sidebar-header-category-text-container').removeClass('d-none');
-                $('.sidebar-items-collapsed').addClass('d-none');
-                $('.sidebar-items-expanded').removeClass('d-none');
-                sideMenu.removeClass('sidebar-collapsed');
+        $('.sidebar-action').click(function () {
+            if(sideMenu.css('width') === '220px' ) {
+                sideMenu.removeClass('sidebar-ntx-expanded');
+                sideMenu.addClass('sidebar-ntx-collapsed');
+                containerNtx.css({
+                    'width' : 'calc(100% - 54px)',
+                    'margin-left' : '54px'
+                });
+                overlay.removeClass('overlay-in');
             }
             else {
-                $(this).html('<i class="material-icons">navigate_next</i>');
-                $('.sidebar-header-category-text-container').addClass('d-none');
-                $('.sidebar-items-collapsed').removeClass('d-none');
-                $('.sidebar-items-expanded').addClass('d-none');
-                sideMenu.addClass('sidebar-collapsed');
+                sideMenu.removeClass('sidebar-ntx-collapsed');
+                sideMenu.addClass('sidebar-ntx-expanded');
+                containerNtx.css({
+                    'width' : '',
+                    'margin-left' : ''
+                });
+                overlay.addClass('overlay-in');
             }
         });
     </script>

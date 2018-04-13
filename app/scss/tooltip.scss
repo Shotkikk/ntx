@@ -9,8 +9,31 @@
   padding: 0.5rem 1rem;
   background-color: $font-color;
 }
-.arrow {
-  &:before {
-    border-bottom-color: #2e2e2e !important;
+.bs-tooltip-top {
+  .arrow {
+    &:before {
+      border-top-color: #2e2e2e !important;
+    }
+  }
+}
+.bs-tooltip-right {
+  .arrow {
+    &:before {
+      border-right-color: #2e2e2e !important;
+    }
+  }
+}
+.bs-tooltip-bottom {
+  .arrow {
+    &:before {
+      border-bottom-color: #2e2e2e !important;
+    }
+  }
+}
+.bs-tooltip-left {
+  .arrow {
+    &:before {
+      border-left-color: #2e2e2e !important;
+    }
   }
 }

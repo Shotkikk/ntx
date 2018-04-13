@@ -35,6 +35,16 @@ gulp.task('html', function () {
         }));
 });
 
+// Copy pipe: images/*.png -> images/*.png
+gulp.task('img', function () {
+    return gulp.src('app/images/**/*.png')
+        .pipe(plumber())
+        .pipe(gulp.dest('dist/images'))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
+});
+
 // Minify pipe: app/scss/**/*.scss + node_modules -> app/css/style.min.css
 gulp.task('css', function () {
     return gulp.src([
@@ -99,10 +109,11 @@ gulp.task('browserSync', function() {
 // Watch changes on app/**/*.*
 gulp.task('watch', ['browserSync'], function () {
     gulp.watch('app/html/**/*.html', ['html']);
+    gulp.watch('app/img/**/*.png', ['img']);
     gulp.watch('app/scss/**/*.scss', ['css']);
     gulp.watch('app/fonts/**/*.{ttf,otf,woff}', ['fonts']);
     gulp.watch('app/js/**/*.js', ['js']);
 });
 
 // Building app/**/*.* to dist/**/*.* (Commands combo)
-gulp.task('build', ['html', 'css', 'fonts', 'js', 'js-app']);
+gulp.task('build', ['html', 'img', 'css', 'fonts', 'js', 'js-app']);
