@@ -95,7 +95,16 @@
 
 @media (min-width:767px) {
   .combo-dropdown-right {
-    min-width: 300px;
+    min-width: 400px;
+  }
+  .combo-dropdown-left {
+    border-right: 1px solid #e5e5e5;
+  }
+}
+@media (max-width:767px) {
+  .combo-dropdown-left {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
   }
 }
 

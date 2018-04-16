@@ -10,10 +10,10 @@
   background-color: #fafafa;
   color: #707070;
   box-shadow: inset -2px 0 0 #e5e5e5;
-  -webkit-transition: width 1s ease;
-     -moz-transition: width 0.2s ease;
-       -o-transition: width 0.2s ease;
-          transition: width 0.2s ease;
+  -webkit-transition: color 1s ease, width 1s ease;
+     -moz-transition: color 0.2s ease, width 0.2s ease;
+       -o-transition: color 0.2s ease, width 0.2s ease;
+          transition: color 0.2s ease, width 0.2s ease;
   .sidebar-inner {
     .sidebar-header {
       width: 100%;
