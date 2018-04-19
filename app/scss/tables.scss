@@ -1,0 +1,18 @@
+.table-ntx {
+  font-size: 12px;
+  tr {
+    th {
+      border-top: 0;
+    }
+    td {
+      a {
+        color: #cc3729 !important;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline !important;
+        }
+
+      }
+    }
+  }
+}

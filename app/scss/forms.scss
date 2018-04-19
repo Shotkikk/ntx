@@ -1,0 +1,39 @@
+.form-control {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  &:hover {
+    border-color: #ff8b80;
+  }
+  &:active {
+    border-color: #ff8b80;
+  }
+  &:focus {
+    border-color: #ff8b80;
+    box-shadow: 0 0 0 .2rem rgba(204,55,41,.25);
+  }
+}
+.has-float-label {
+  label, > span {
+    -webkit-transition: all ease .2s;
+    transition: all ease .2s;
+  }
+  label {
+    white-space: nowrap;
+    max-width: calc(100% - 40px);
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+  }
+  .form-control {
+    &:placeholder-shown:not(:focus) + * {
+      font-size: 12px;
+      pointer-events: none;
+      height: 35px;
+      top: 12px;
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+}

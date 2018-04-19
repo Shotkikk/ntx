@@ -49,6 +49,8 @@ gulp.task('img', function () {
 gulp.task('css', function () {
     return gulp.src([
         'node_modules/bootstrap/dist/css/bootstrap.min.css',
+        'node_modules/bootstrap-select-v4/dist/css/bootstrap-select.min.css',
+        'node_modules/bootstrap-float-label/dist/bootstrap-float-label.min.css',
         'app/scss/**/*.scss'
     ])
         .pipe(plumber())
@@ -68,7 +70,8 @@ gulp.task('js', function () {
     return gulp.src([
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/popper.js/dist/umd/popper.min.js',
-        'node_modules/bootstrap/dist/js/bootstrap.min.js'
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/bootstrap-select-v4/dist/js/bootstrap-select.min.js'
     ])
         .pipe(plumber())
         .pipe(gulp.dest('dist/js'))

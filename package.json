@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "devDependencies": {
     "bootstrap": "^4.0.0",
+    "bootstrap-float-label": "^3.0.1",
+    "bootstrap-select-v4": "^1.12.4",
     "browser-sync": "^2.23.6",
     "foundation-sites": "^6.4.4-rc1",
     "gulp": "^3.9.1",

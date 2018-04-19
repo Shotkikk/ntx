@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  outline: 0 !important;
 }
 html {
   color: $font-color;
@@ -19,8 +20,15 @@ body {
   color: $font-color;
 }
 
-a {
-  outline: none !important;
+.btn-group {
+  button, a {
+    outline: 0 !important;
+  }
+  > .btn-group {
+    > .dropdown-toggle {
+      outline: 0 !important;
+    }
+  }
 }
 
 .bold {
@@ -33,4 +41,23 @@ a {
 
 .transparent {
   opacity: 0;
+}
+
+.container-fluid-max-width {
+  margin-top: 15px;
+  max-width: 990px;
+}
+.container-fluid-wide {
+  margin-top: 15px;
+  max-width: calc(100vw - 220px);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }

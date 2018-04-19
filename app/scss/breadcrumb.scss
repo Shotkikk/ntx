@@ -3,10 +3,8 @@
 .breadcrumb-container {
   display: -webkit-flex;
   display: flex;
-  width: 100%;
   position: relative;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 0;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
   height: 48px;
@@ -48,10 +46,11 @@
       font-family: 'Material Icons';
       vertical-align: middle;
       display: inline-block;
-      padding-right: .5rem;
-      padding-left: .5rem;
+      padding-right: .1em;
+      padding-left: .1em;
       color: #6c757d;
       content: "\E5CC";
+      font-weight: normal !important;
     }
   }
 }

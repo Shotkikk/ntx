@@ -1,0 +1,45 @@
+.context-info-container {
+  text-align: center;
+  .context-parameters {
+  }
+}
+.context-filter-container {
+  text-align: center;
+}
+.list-actions-container {
+  display: inline-flex;
+  > .btn-group {
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
+    .dropdown-menu {
+      top: 3px !important;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          white-space: nowrap;
+          font-size: 14px;
+          cursor: pointer;
+          &:hover {
+            text-decoration: none;
+            outline: 0;
+            background-color: #eee;
+          }
+          &:active {
+            text-decoration: none;
+            background-color: #eee;
+          }
+          &:focus {
+            text-decoration: none;
+            background-color: #eee;
+          }
+        }
+      }
+    }
+  }
+}
+.list-size {
+  width: 100px !important;
+}
