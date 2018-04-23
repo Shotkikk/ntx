@@ -189,12 +189,12 @@
                                         <ul>
                                             <li class="nav-link">
                                                 <a>
-                                                    cyckji
+                                                    temporary1
                                                 </a>
                                             </li>
                                             <li class="nav-link">
                                                 <a>
-                                                    djupa
+                                                    temporary2
                                                 </a>
                                             </li>
                                         </ul>
@@ -203,12 +203,12 @@
                                         <ul>
                                             <li class="nav-link">
                                                 <a>
-                                                    chjuj
+                                                    temporary3
                                                 </a>
                                             </li>
                                             <li class="nav-link">
                                                 <a>
-                                                    cjipa
+                                                    temporary4
                                                 </a>
                                             </li>
                                         </ul>
@@ -217,12 +217,12 @@
                                         <ul>
                                             <li class="nav-link">
                                                 <a>
-                                                    costam
+                                                    temporary5
                                                 </a>
                                             </li>
                                             <li class="nav-link">
                                                 <a>
-                                                    hehs
+                                                    temporary6
                                                 </a>
                                             </li>
                                         </ul>
@@ -231,12 +231,12 @@
                                         <ul>
                                             <li class="nav-link">
                                                 <a>
-                                                    BLEWBELBL BLELLEBLEBL EL
+                                                    temporary
                                                 </a>
                                             </li>
                                             <li class="nav-link">
                                                 <a>
-                                                    DUDU DUDUDUD UUDDUDU
+                                                    temporary
                                                 </a>
                                             </li>
                                         </ul>
@@ -777,7 +777,7 @@
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <ul>
                                         <li class="nav-link">
-                                            <a>
+                                            <a href="form.html">
                                                 Dodaj projekt
                                             </a>
                                         </li>
@@ -793,7 +793,7 @@
                     </form>
                 </div>
             </div>
-            <div class="container-fluid container-fluid-max-width">
+            <div class="container-fluid container-fluid-max-width pagination-container">
                 <div class="pagination center noselect">
                     <ul class="pagination">
                         <li class="page-item previous"><a class="page-link" href="#"><i class="material-icons">keyboard_arrow_left</i></a></li>
@@ -1122,9 +1122,25 @@
                     </tbody>
                 </table>
             </div>
+            <div class="container-fluid container-fluid-max-width pagination-container">
+                <div class="pagination center noselect">
+                    <ul class="pagination">
+                        <li class="page-item previous"><a class="page-link" href="#"><i class="material-icons">keyboard_arrow_left</i></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item next"><a class="page-link" href="#"><i class="material-icons">keyboard_arrow_right</i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid container-fluid-max-width">
+                <div class="footer text-center">
+                    <p>Copyright © 2018 NetTeam Solutions<br>
+                    Wersja: v2.0.0-RC13-ee905e5eb<br>
+                    (2018-04-17)</p>
+                </div>
+            </div>
         </div>
-
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </body>
 
     <script>
@@ -1215,5 +1231,11 @@
         });
 
         $('.selectpicker').tooltip('disable');
+
+
+        $('#startQuestionBtn').click(function () {
+            $('#yesNo').css('display', 'block');
+        })
+        
     </script>
 </html>

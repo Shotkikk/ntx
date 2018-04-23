@@ -685,459 +685,99 @@
             <div class="container-fluid container-fluid-max-width">
                 <div class="context-info-container">
                     <h3 class="context-name">
-                        Projekty
-                        <span class="context-parameters">
-                            (12541)
-                        </span>
+                        Dodaj projekt
                     </h3>
-
                 </div>
             </div>
             <div class="container-fluid container-fluid-max-width">
                 <div class="context-filter-container">
                     <form>
                         <div class="form-row">
-                            <div class="form-group col-md-2 has-float-label">
-                                <input type="text" class="form-control" placeholder="Id">
-                                <label>Id</label>
-                            </div>
-                            <div class="form-group col-md-6 has-float-label">
+                            <div class="form-group col-md-12 has-float-label">
                                 <input type="text" class="form-control" placeholder="Nazwa">
                                 <label>Nazwa</label>
                             </div>
-                            <div class="form-group col-md-4 has-float-label">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 has-float-label">
                                 <input type="text" class="form-control" placeholder="Numer kontraktu">
-                                <label>Numer kontraktu</label>
+                                <label>Klienci</label>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-md-5 has-float-label">
+                            <div class="form-group col-md-6 has-float-label">
                                 <input type="text" class="form-control" placeholder="Kierownik kontraktu">
-                                <label>Kierownik kontraktu</label>
+                                <label>Punkt sprzedaży</label>
                             </div>
                             <div class="form-group col-md-4 has-float-label">
                                 <input type="text" class="form-control" placeholder="Status projektu">
-                                <label>Status projektu</label>
+                                <label>Typ domu na podstawie</label>
+                            </div>
+                            <div class="form-group col-md-2 has-float-label">
+                                <input type="text" class="form-control" placeholder="Rynek">
+                                <label>Współczynnik</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <p style="padding-left: 15px;">Adres budowy</p>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 has-float-label">
+                                <input type="text" class="form-control" placeholder="Kierownik kontraktu">
+                                <label>Kraj</label>
+                            </div>
+                            <div class="form-group col-md-6 has-float-label">
+                                <input type="text" class="form-control" placeholder="Kierownik kontraktu">
+                                <label>Miasto</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-9 has-float-label">
+                                <input type="text" class="form-control" placeholder="Kierownik kontraktu">
+                                <label>Ulica</label>
                             </div>
                             <div class="form-group col-md-3 has-float-label">
-                                <input type="text" class="form-control" placeholder="Rynek">
-                                <label>Rynek</label>
+                                <input type="text" class="form-control" placeholder="Kierownik kontraktu">
+                                <label>Numer</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3 has-float-label">
+                                <input type="text" class="form-control" placeholder="Kierownik kontraktu">
+                                <label>Kod pocztowy</label>
+                            </div>
+                            <div class="form-group col-md-3 has-float-label">
+                                <input type="text" class="form-control" placeholder="Kierownik kontraktu">
+                                <label>Nr. działki</label>
+                            </div>
+                            <div class="form-group col-md-6 has-float-label">
+                                <input type="text" class="form-control" placeholder="Kierownik kontraktu">
+                                <label>Dzielnica</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 has-float-label">
+                                <input type="text" class="form-control" placeholder="Kierownik kontraktu">
+                                <label>Gmina</label>
+                            </div>
+                            <div class="form-group col-md-6 has-float-label">
+                                <input type="text" class="form-control" placeholder="Kierownik kontraktu">
+                                <label>Powiat</label>
                             </div>
                         </div>
                         <div class="list-actions-container noselect">
                             <div class="btn-group">
-                                <button type="submit" class="btn btn-light">Filtruj</button>
-                            </div>
-                            <div class="btn-group">
-                                <button type="submit" class="btn btn-light">Resetuj</button>
-                            </div>
-                            <div class="btn-group" title="Ilość pozycji" tooltip="true" data-placement="top">
-                                <select class="selectpicker list-size">
-                                    <option>10</option>
-                                    <option>20</option>
-                                    <option>50</option>
-                                    <option>200</option>
-                                </select>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons">file_download</i>
-                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <ul>
-                                        <li class="nav-link">
-                                            <a>
-                                                Exportuj do .xlsx
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons">mode_edit</i>
-                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <ul>
-                                        <li class="nav-link">
-                                            <a>
-                                                Edytuj zbiorczo
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons">add</i>
-                                    <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <ul>
-                                        <li class="nav-link">
-                                            <a href="form.html">
-                                                Dodaj projekt
-                                            </a>
-                                        </li>
-                                        <li class="nav-link">
-                                            <a>
-                                                Dodaj zbiorczo
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <button type="submit" class="btn btn-success">Dodaj</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="container-fluid container-fluid-max-width pagination-container">
-                <div class="pagination center noselect">
-                    <ul class="pagination">
-                        <li class="page-item previous"><a class="page-link" href="#"><i class="material-icons">keyboard_arrow_left</i></a></li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item next"><a class="page-link" href="#"><i class="material-icons">keyboard_arrow_right</i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container-fluid container-fluid-wide">
-                <table class="table table-striped table-ntx">
-                    <thead>
-                        <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">Nazwa</th>
-                            <th scope="col">Kierownik</th>
-                            <th scope="col">Sprzedawca</th>
-                            <th scope="col">Klienci</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Rynek</th>
-                            <th scope="col">Oferta</th>
-                            <th scope="col">Typ domu</th>
-                            <th scope="col">Kontrakt</th>
-                            <th scope="col">Współczynnik</th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="align-middle">
-                                <a>1295503</a>
-                            </td>
-                            <td class="align-middle"><a>04.07.2017 - wohnhaft - Muster</a></td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">1295503</td>
-                            <td class="align-middle">04.07.2017 - wohnhaft - Muster</td>
-                            <td class="align-middle">Sierosławski Mateusz</td>
-                            <td class="align-middle">Hesselbarth Franziska</td>
-                            <td class="align-middle">Grimm Mario, Siebert Heike</td>
-                            <td class="align-middle">Uzgodnienie architektury z klientem</td>
-                            <td class="align-middle">Rynek niemiecki</td>
-                            <td class="align-middle">Family 2017; 03.01.2018</td>
-                            <td class="align-middle">FAMILY 145</td>
-                            <td class="align-middle">10959</td>
-                            <td class="align-middle">1.00</td>
-                            <td class="align-middle">
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">add</i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="material-icons">mode_edit</i>
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="container-fluid container-fluid-max-width pagination-container">
-                <div class="pagination center noselect">
-                    <ul class="pagination">
-                        <li class="page-item previous"><a class="page-link" href="#"><i class="material-icons">keyboard_arrow_left</i></a></li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item next"><a class="page-link" href="#"><i class="material-icons">keyboard_arrow_right</i></a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="container-fluid container-fluid-max-width">
                 <div class="footer text-center">
                     <p>Copyright © 2018 NetTeam Solutions<br>
-                    Wersja: v2.0.0-RC13-ee905e5eb<br>
-                    (2018-04-17)</p>
+                        Wersja: v2.0.0-RC13-ee905e5eb<br>
+                        (2018-04-17)</p>
                 </div>
             </div>
         </div>
@@ -1236,6 +876,6 @@
         $('#startQuestionBtn').click(function () {
             $('#yesNo').css('display', 'block');
         })
-        
+
     </script>
 </html>

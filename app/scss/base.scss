@@ -47,6 +47,7 @@ body {
   margin-top: 15px;
   max-width: 990px;
 }
+
 .container-fluid-wide {
   margin-top: 15px;
   max-width: calc(100vw - 220px);
@@ -58,6 +59,5 @@ body {
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }

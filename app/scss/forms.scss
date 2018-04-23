@@ -13,10 +13,6 @@
   }
 }
 .has-float-label {
-  label, > span {
-    -webkit-transition: all ease .2s;
-    transition: all ease .2s;
-  }
   label {
     white-space: nowrap;
     max-width: calc(100% - 40px);
@@ -24,16 +20,36 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display:block;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    padding: 0 5px;
+    background-color: #fff;
+    color: #707070;
   }
   .form-control {
     &:placeholder-shown:not(:focus) + * {
       font-size: 12px;
       pointer-events: none;
-      height: 35px;
       top: 12px;
     }
-    &:focus::placeholder {
-      color: transparent;
+    &:placeholder-shown{
+      &:focus + * {
+        color: #cc3729;
+      }
+      &:active + * {
+        color: #cc3729;
+      }
+    }
+    &:focus {
+      &::placeholder {
+        color: transparent;
+      }
+      &:placeholder-shown {
+        color: #cc3729;
+      }
     }
   }
+}
+input[value=""] {
+  background-color: greenyellow;
 }
